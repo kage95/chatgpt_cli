@@ -1,13 +1,13 @@
 import { Command, ux } from "@oclif/core";
 import * as notifier from "node-notifier";
-import gpt from "../../client/gpt";
+import chat from "../../client/chat";
 
-export default class Gpt extends Command {
+export default class Chat extends Command {
   async run(): Promise<void> {
     const prompt = await ux.prompt("provide prompt");
 
     ux.action.start("generating...");
-    const completion = await gpt.createChatCompletion({
+    const completion = await chat.createChatCompletion({
       model: "gpt-3.5-turbo",
       messages: [
         {

@@ -4,7 +4,7 @@
   "description": "oclif example Hello World CLI",
   "author": "kage",
   "bin": {
-    "gpt": "./bin/run"
+    "chat": "./bin/run"
   },
   "homepage": "https://github.com/kage/chatgpt_cli",
   "license": "MIT",
